@@ -75,9 +75,14 @@
                 max-width: 40%; /* Adjusted to change the width when moving to the next row */
             }
         }
+
         @media (max-width: 800px) {
+            section {
+                flex-direction: column; /* Change to a single column layout on smaller screens */
+            }
             .product {
-                max-width: 80%; /* Adjusted to change the width when moving to the next row on smaller screens */
+                max-width: 80%; /* Each product takes full width on smaller screens */
+                margin-bottom: 20px; /* Add some spacing between products in the single column */
             }
         }
         @keyframes slideIn {
@@ -210,7 +215,7 @@
             <img src="images/fruitroleup.png" alt="Product 9">
             <p>$0.50</p>
         </div>
-        <section>
+       
         <div class="product">
             <h3>hello panda</h3>
             <img src="images/hellopanda.png" alt="Product 9">
@@ -222,7 +227,7 @@
             <img src="images/pocky.png" alt="Product 9">
             <p>$1.00</p>
         </div>
-        </section>
+       
         <div class="product">
             <h3>oreos</h3>
             <img src="images/oreo.png" alt="Product 9">
