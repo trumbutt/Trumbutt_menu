@@ -67,21 +67,14 @@
             position: absolute;
             bottom: 0;
         }
-        @media (max-width: 1200px) {
-            section {
-                justify-content: center; /* Adjusted to center the boxes on smaller screens */
-            }
-            .product {
-                max-width: 40%; /* Adjusted to change the width when moving to the next row */
-            }
-        }
-
         @media (max-width: 800px) {
             section {
                 flex-direction: column; /* Change to a single column layout on smaller screens */
+                align-items: center; /* Center items horizontally on smaller screens */
             }
             .product {
                 max-width: 80%; /* Each product takes full width on smaller screens */
+                margin: 0 auto; /* Center the products horizontally */
                 margin-bottom: 20px; /* Add some spacing between products in the single column */
             }
         }
