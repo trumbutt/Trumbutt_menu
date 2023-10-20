@@ -58,12 +58,6 @@
             height: auto;
             margin: 0 auto;
         }
-        .alert {
-            padding: 20px;
-            background-color: green; /* Red */
-            color: white;
-            margin-bottom: 15px;
-        }
         footer {
             background-color: #f4f3e7;
             color: #1d2026;
@@ -73,20 +67,17 @@
             position: absolute;
             bottom: 0;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
             section {
                 justify-content: center; /* Adjusted to center the boxes on smaller screens */
             }
             .product {
-                max-width: 40%; /* Adjusted to change the width when moving to the next row on smaller screens */
-            }
-            /* Added new styles to display two items per row on mobile devices */
-            @media (max-width: 600px) {
-                .product {
-                    max-width: 80%; /* Adjusted to ensure two items per row on mobile devices */
-                }
+                max-width: 40%; /* Adjusted to change the width when moving to the next row */
             }
         }
+        @media (max-width: 800px) {
+            .product {
+                max-width: 80%;
         @keyframes slideIn {
             0% {
                 opacity: 0;
