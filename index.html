@@ -269,5 +269,23 @@
     <footer>
         <p>M-Th 10:00pm - 1:00am The Trumbutt</p>
     </footer>
+    <script>
+        const products = document.querySelectorAll('.product');
+        const fadeIn = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideIn 0.5s ease-out';
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+        const options = {
+            threshold: 0.5
+        };
+        const observer = new IntersectionObserver(fadeIn, options);
+        products.forEach(product => {
+            observer.observe(product);
+        });
+    </script>
 </body>
 </html>
