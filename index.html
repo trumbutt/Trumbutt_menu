@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added meta tag for scaling on phones -->
+    <title>the trumbutt | Menu</title>
+    <link href="images/nuggets.png" rel="icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SweetSansPro:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'SweetSansPro', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            color: snow;
+            position: relative;
+            background: #f4f3e7;
+            width: 100%;
+            scroll-behavior: smooth; /* Added to make the scroll behavior smoother */
+        }
+        header {
+            background-color: #f4f3e7;
+            color: #1d2026;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            margin-bottom: 20px;
+            z-index: 1000;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 90px 20px 20px 20px;
+            justify-content: space-around; /* Adjusted to evenly distribute space between the boxes */
+        }
+        .product {
+            background-color: #e8dcc6; /* Updated the background color to a slightly darker shade */
+            color: #1d2026;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 0 20%; /* Updated flex property to control responsiveness */
+            max-width: 20%; /* Adjusted to ensure each product has a maximum width of 20% */
+            animation: slideIn 0.5s ease-out; /* Added animation to slide in */
+        }
+        .product h3 {
+            margin-top: 10px;
+            color: #1d2026;
+        }
+        .product img {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .alert {
+            padding: 20px;
+            background-color: green; /* Red */
+            color: white;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #f4f3e7;
+            color: #1d2026;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        @media (max-width: 1200px) {
+            section {
+                justify-content: center; /* Adjusted to center the boxes on smaller screens */
+            }
+            .product {
+                max-width: 40%; /* Adjusted to change the width when moving to the next row */
+            }
+        }
+        @media (max-width: 800px) {
+            .product {
+                max-width: 80%; /* Adjusted to change the width when moving to the next row on smaller screens */
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 style="font-size: 30px;">the trumbutt</h1>
+    </header>
+    <p>.</p>
+    <section>
+        <div class="product">
+            <h3>pb&j sandwich</h3>
+            <img src="images/pbj.png" alt="Product 1">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>nutella sandwich</h3>
+            <img src="images/nutella.png" alt="Product 2">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>grilled cheese</h3>
+            <img src="images/grchz.png" alt="Product 3">
+            <p>$1.50 (+0.50c dino nuggets)</p>
+        </div>
+        <div class="product">
+            <h3>egg and cheese sandwich</h3>
+            <img src="images/eggcheese.png" alt="Product 4">
+            <p>$2.00</p>
+        </div>
+        <div class="product">
+            <h3>cheese quesadilla</h3>
+            <img src="images/chques.png" alt="Product 5">
+            <p>half: $1.50 / full: $2.00</p>
+            <p>(+0.50c dino nuggets)</p>
+        </div>
+        <div class="product">
+            <h3>buffalo chicken quesadilla</h3>
+            <img src="images/buffchk.png" alt="Product 6">
+            <p>half: $1.75 / full: $3.00</p>
+        </div>
+        <div class="product">
+            <h3>fries</h3>
+            <img src="images/fries.png" alt="Product 7">
+            <p>$1.00 (+0.50c cheese)</p>
+        </div>
+        <div class="product">
+            <h3>dino nuggets</h3>
+            <img src="images/nuggets.png" alt="Product 8">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>vegan nuggets</h3>
+            <img src="images/vegandino.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>mozarella sticks</h3>
+            <img src="images/mozzsticks.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>mac 'n cheese bites</h3>
+            <img src="images/macncheese.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>pizza rolls</h3>
+            <img src="images/pizzarolls.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>cup ramen</h3>
+            <img src="images/cupramen.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>shin ramen</h3>
+            <img src="images/shin.png" alt="Product 9">
+            <p>$2.00</p>
+        </div>
+        <div class="product">
+            <h3>specialty ramen</h3>
+            <img src="images/specialramen.png" alt="Product 9">
+            <p>$2.50</p>
+        </div>
+        <div class="product">
+            <h3>vanilla, chocolate, oreo milkshake</h3>
+            <img src="images/milkshake.png" alt="Product 9">
+            <p>$3.00</p>
+        </div>
+        <div class="product">
+            <h3>coke float</h3>
+            <img src="images/cokefloat.png" alt="Product 9">
+            <p>$3.00</p>
+        </div>
+        <div class="product">
+            <h3>cookie dough</h3>
+            <img src="images/cookiedough.png" alt="Product 9">
+            <p>$1.50</p>
+        </div>
+        <div class="product">
+            <h3>ice cream</h3>
+            <img src="images/icecream.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>ice cream sandwich</h3>
+            <img src="images/icecreamsnd.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>ice cream drumstick</h3>
+            <img src="images/icecreamdrumstick.png" alt="Product 9">
+            <p>$2.00</p>
+        </div>
+        <div class="product">
+            <h3>fruit roll up</h3>
+            <img src="images/fruitroleup.png" alt="Product 9">
+            <p>$0.50</p>
+        </div>
+        <div class="product">
+            <h3>hello panda</h3>
+            <img src="images/hellopanda.png" alt="Product 9">
+            <p>$0.50</p>
+        </div>
+        <div class="product">
+            <h3>pocky</h3>
+            <img src="images/pocky.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>oreos</h3>
+            <img src="images/oreo.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>assorted chips</h3>
+            <img src="images/chips.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>snapple</h3>
+            <img src="images/snapple.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>soda</h3>
+            <img src="images/soda.png" alt="Product 9">
+            <p>$1.00</p>
+        </div>
+        <div class="product">
+            <h3>red bull</h3>
+            <img src="images/redbull.png" alt="Product 9">
+            <p>$2.00</p>
+        </div>
+        <div class="product">
+            <h3>la colombe</h3>
+            <img src="images/lacolombe.png" alt="Product 9">
+            <p>$3.00</p>
+        </div>
+        <!-- Add more product boxes as needed -->
+        <div class="product">
+            <h3>coming soon. . .</h3>
+            
+            
+        </div>
+        <div class="product">
+            <h3>coming soon. . .</h3>
+            
+            
+        </div>
+    </section>
+    <p>.</p>
+    <footer>
+        <p>M-Th 10:00pm - 1:00am The Trumbutt</p>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Pop-up Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="simpleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Simple Pop-up Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This is a simple pop-up modal using Bootstrap!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to show the modal on page load -->
+    <script>
+        window.onload = function() {
+            $('#simpleModal').modal('show');
+        };
+    </script>
+</body>
+</html>
