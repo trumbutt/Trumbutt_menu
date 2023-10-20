@@ -73,17 +73,18 @@
             position: absolute;
             bottom: 0;
         }
-        @media (max-width: 1200px) {
+        @media (max-width: 800px) {
             section {
                 justify-content: center; /* Adjusted to center the boxes on smaller screens */
             }
             .product {
-                max-width: 40%; /* Adjusted to change the width when moving to the next row */
+                max-width: 40%; /* Adjusted to change the width when moving to the next row on smaller screens */
             }
-        }
-        @media (max-width: 800px) {
-            .product {
-                max-width: 80%; /* Adjusted to change the width when moving to the next row on smaller screens */
+            /* Added new styles to display two items per row on mobile devices */
+            @media (max-width: 600px) {
+                .product {
+                    max-width: 80%; /* Adjusted to ensure two items per row on mobile devices */
+                }
             }
         }
         @keyframes slideIn {
